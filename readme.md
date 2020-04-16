@@ -1,0 +1,3 @@
+# Nexter APP
+
+Built modern web app using somme new technologies like node.js, express, mongoose, mongoDB ...
