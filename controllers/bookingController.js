@@ -48,13 +48,15 @@ exports.getCheckoutBooking = catchAsync(async (req, res, next) => {
         price
     } = req.query;
 
-    if (!user || !home || !price) return next();
+    if (user && home && price) return next();
 
     await Booking.create({
         home,
         user,
         price
     });
+
+
 
     res.redirect(`${req.originalUrl.split('?')[0]}`);
 });
