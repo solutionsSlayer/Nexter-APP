@@ -58,7 +58,7 @@ exports.getCheckoutBooking = catchAsync(async (req, res, next) => {
 
 
 
-    res.redirect(`/`);
+    res.redirect(`${req.originalUrl.split('?')[0]}`);
 });
 
 exports.getAll = catchAsync(async (req, res, next) => {

@@ -2,7 +2,7 @@
   "name": "nexter",
   "version": "1.0.0",
   "description": "Nexter webpage",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
