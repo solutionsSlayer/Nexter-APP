@@ -13,14 +13,14 @@ const uri = process.env.DB_HOSTNAME.replace(
 );
 const port = process.env.DB_PORT;
 
-const DB = mongoose.connect(uri, {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
   useUnifiedTopology: true
 });
 
-app.listen(port);
+const server = app.listen(port);
 
 process.on('unhandledRejection', err => {
   console.log('UNHANDLED REJECTION! 💥 Shutting down...');
