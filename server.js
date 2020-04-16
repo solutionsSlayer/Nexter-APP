@@ -7,10 +7,7 @@ require("dotenv").config({
   path: `${__dirname}/config.env`
 });
 
-const uri = process.env.DB_HOSTNAME.replace(
-  "<password>",
-  process.env.DB_PASSWORD
-);
+const uri = process.env.DB_HOSTNAME;
 const port = process.env.DB_PORT || 3000;
 
 mongoose.connect(uri, {
