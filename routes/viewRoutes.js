@@ -8,7 +8,7 @@ const router = express.Router();
 router.get("/login", viewController.login);
 router.get("/signup", viewController.signup);
 
-router.get("/", bookingController.getCheckoutBooking, authController.isLoggedIn, viewController.getIndex);
+// router.get("/", bookingController.getCheckoutBooking, authController.isLoggedIn, viewController.getIndex);
 router.get("/homes", authController.isLoggedIn, viewController.getHomes);
 router.get("/home/:slug", authController.isLoggedIn, viewController.detail);
 
