@@ -16,8 +16,7 @@ const port = process.env.DB_PORT || 3000;
 mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true
+  useFindAndModify: false
 });
 
 const server = app.listen(port, () => {
