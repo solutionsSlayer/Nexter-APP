@@ -1,0 +1,156 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    color: $color-grey-light-1;
+    line-break: 1;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    line-height: 1;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-transform: uppercase;
+
+    &--blue {
+        color: $color-secondary;
+    }
+
+    &--lg {
+        font-size: 2rem;
+    }
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.btn {
+    background-color: $color-primary;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+}
+
+.btn__log {
+    background-color: #fff;
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(#333, .75);
+    font-size: 1.1rem;
+    padding: 1.5rem 2.5rem;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:hover {
+        background-color: $color-grey-light-2;
+        color: #fff;
+    }
+}
+
+.review__testimonial {
+    font-family: $font-display;
+    font-size: 2.8rem;
+    font-style: italic;
+}
+
+.text_align {
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: start;
+    }
+
+    &--left {
+        text-align: end;
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+
+.mb-lg {
+    margin-bottom: 4rem;
+}
+
+.mb-hg {
+    margin-bottom: 8rem;
+}
+
+.mt-sm {
+    margin-top: 2rem;
+}
+
+.mt-md {
+    margin-top: 3rem;
+}
+
+.mt-lg {
+    margin-top: 4rem;
+}
+
+.mt-hg {
+    margin-top: 8rem;
+}
+
+.ml-sm {
+    margin-left: 2rem;
+}
+
+.ml-md {
+    margin-left: 3rem;
+}
+
+.ml-lg {
+    margin-left: 4rem;
+}
+
+.ml-hg {
+    margin-left: 8rem;
+}

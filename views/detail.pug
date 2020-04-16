@@ -1,0 +1,111 @@
+extends base 
+
+include reviewCard
+
+block content 
+    include _header        
+
+    body.detail
+        .detail__header.text_align--center
+            if home
+                img.detail__house(src=`/img/homes/${home.imageCover}`, alt="")
+            h1.heading-1 The House of Your Dreams
+            .detail__infos
+                svg.detail__icon
+                    use(xlink:href="/img/sprite.svg#icon-global")
+                if home.dispo === true
+                    p.detail__text Available
+                else 
+                    p.detail__text Sold
+                svg.detail__icon
+                    use(xlink:href="/img/sprite.svg#icon-map-pin")
+                p.detail__text= `${home.location.description}`
+
+        .detail__visit
+            .detail__facts
+                h2.detail__title.text__align--start.heading-3--lg.heading-3 QUICK FACTS
+                span.detail__fact
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-map-pin")
+                    span.detail__span
+                        span NEXT VISIT 
+                        - const options = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
+                        - const date = home.startDates[0].toLocaleString('en-US', options)
+                        p= date
+
+                span.detail__fact
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-map-pin")
+                    span.detail__span
+                        span PRICE
+                        p= `$${home.price}`.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+
+                span.detail__fact
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-map-pin")
+                    span.detail__span 
+                        span RATING
+                        p= `${home.ratingsAverage} / 5`
+
+                span.detail__fact
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-map-pin")
+                    span.detail__span 
+                        span GROUP
+                        p= `${home.maxGroupSize} peoples`
+
+            .detail__guides
+                h2.detail__title.text__align--start.heading-3--lg.heading-3 YOUR VISIT GUIDES
+                span.detail__guide
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-key")
+                    span.detail__span 
+                        span GUIDE
+                        p= home.guides[0].name
+
+                span.detail__guide
+                    svg.detail__icon
+                        use(xlink:href="/img/sprite.svg#icon-key")
+                    span.detail__span 
+                        span GUIDE
+                        p= home.guides[1].name
+
+
+        .detail__description
+            h2.heading-3.heading-3--lg= `About ${home.name}`
+            p.detail__text= home.description
+            p.detail__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sit blanditiis, similique autem quis odit, nostrum ex veritatis aliquam dignissimos sint fugit et iste hic ipsum vero tenetur unde ullam?
+
+
+        section.detail__pictures
+            figure.detail__item
+                img.detail__img(src=`/img/homes/${home.images[0]}` alt=`luxury house`)
+            figure.detail__item
+                img.detail__img(src=`/img/homes/${home.images[1]}` alt=`luxury house`)
+            figure.detail__item
+                img.detail__img(src=`/img/homes/${home.images[2]}` alt=`luxury house`)
+
+        //- section#map
+        //-     img(src="#" alt="map")
+
+
+        section.reviews
+            each review in home.reviews
+                +reviewCard(review)
+
+        section.section-cta
+            .cta
+                .cta__img.cta__img--logo
+                    img(src=`/img/logo.png`, alt='Natours logo')
+                img.cta__img.cta__img--1(src=`/img/homes/${home.images[0]}`, alt='')
+                img.cta__img.cta__img--2(src=`/img/homes/${home.images[1]}`, alt='')
+                .cta__content
+                    h2.heading-secondary What are you waiting for?
+                    p.cta__text 10 days. 1 adventure. Infinite memories. Make it yours today!
+
+                    if user
+                        button.btn.btn--green.span-all-rows#book-home(data-home-id=`${home._id}`) Book tour now!
+                    else
+                        a.btn.btn--green.span-all-rows(href="/login") Login to book tour
+
+    include _footer

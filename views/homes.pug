@@ -1,0 +1,38 @@
+extends base 
+
+block content
+  body.home_container
+    include _header
+
+    section.homes
+      h2.heading-2.homes__head Found your own luxury home!
+
+      each home in homes
+        .home
+          img.home__img(src=`img/homes/${home.imageCover}` alt=`${home.name}`)
+          svg.home__like
+            use(xlink:href=`img/sprite.svg#icon-heart-full`)
+
+          h5.home__name= home.name
+          .home__location
+            svg
+              use(xlink:href=`img/sprite.svg#icon-map-pin`)
+            p= home.location.description
+
+          .home__rooms
+            svg
+              use(xlink:href=`img/sprite.svg#icon-profile-male`)
+            p= home.rooms
+
+          .home__area
+            svg
+              use(xlink:href=`img/sprite.svg#icon-expand`)
+            p= home.space
+
+          .home__price
+            svg
+              use(xlink:href=`img/sprite.svg#icon-key`)
+            p= `$${home.price}`
+          a.btn.home__btn(href=`/home/${home.slug}`) Contact realtor
+
+    include _footer

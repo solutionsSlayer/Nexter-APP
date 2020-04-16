@@ -1,0 +1,28 @@
+extends base 
+
+block content 
+    include _header
+
+    body.signup__container
+        .signup  
+            form.signup__form(action="")
+                h2.signup__head.heading-3.heading-3--blue CREATE YOUR ACCOUNT!
+                .signup__infos
+                    label(for="name") Your name 
+                    input.signup__input(placeholder="John Doe" name="name" type="text")
+                
+                .signup__infos
+                    label(for="email") Your email
+                    input.signup__input(placeholder="John-Doe@gmail.com" name="email" type="email")
+                
+                .signup__infos
+                    label(for="password") Your password
+                    input.signup__input(name="password" placeholder="********" type="password")
+                
+                .signup__infos
+                    label(for="passwordConfirm") Confirm password
+                    input.signup__input(placeholder="********" name="passwordConfirm" type="password")
+                
+                button#signup_btn.btn Sign Up
+
+    include _footer

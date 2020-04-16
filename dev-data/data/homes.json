@@ -1,0 +1,264 @@
+[{
+    "location": {
+      "description": "Miami, USA",
+      "type": "Point",
+      "coordinates": [-80.185942, 25.774772],
+      "address": "301 Biscayne Blvd, Miami, FL 33132, USA"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "dispo": true,
+    "rooms": "3 rooms",
+    "space": "270 m2",
+    "images": ["home-2-1.jpeg", "home-2-2.jpeg", "home-2-3.jpeg"],
+    "startDates": [
+      "2021-06-19T09:00:00.000Z",
+      "2021-07-20T09:00:00.000Z",
+      "2021-08-18T09:00:00.000Z"
+    ],
+    "maxGroupSize": 15,
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a1f4e2f8fb814b56fa185"],
+    "_id": "5c88fa8cf4afda39709c2955",
+    "name": "The Sea Explorer",
+    "price": 1000000,
+    "summary": "Exploring the jaw-dropping US east coast by foot and by boat",
+    "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "imageCover": "home-2-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "Banff, CAN",
+      "type": "Point",
+      "coordinates": [-115.570154, 51.178456],
+      "address": "224 Banff Ave, Banff, AB, Canada"
+    },
+    "startDates": [
+      "2021-04-25T09:00:00.000Z",
+      "2021-07-20T09:00:00.000Z",
+      "2021-10-05T09:00:00.000Z"
+    ],
+    "maxGroupSize": 25,
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a201e2f8fb814b56fa186",
+      "5c8a1f292f8fb814b56fa184"
+    ],
+    "ratingsAverage": 5,
+    "ratingsQuantity": 9,
+    "dispo": true,
+    "rooms": "6 rooms",
+    "space": "375 m2",
+    "images": ["home-1-1.jpeg", "home-1-2.jpeg", "home-1-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c2951",
+    "name": "The Forest Hiker",
+    "price": 1200000,
+    "summary": "Breathtaking hike through the Canadian Banff National Park",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "home-1-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "Aspen, USA",
+      "type": "Point",
+      "coordinates": [-106.822318, 39.190872],
+      "address": "419 S Mill St, Aspen, CO 81611, USA"
+    },
+    "startDates": [
+      "2022-01-05T10:00:00.000Z",
+      "2022-02-12T10:00:00.000Z",
+      "2023-01-06T10:00:00.000Z"
+    ],
+    "maxGroupSize": 10,
+    "guides": [
+      "5c8a21d02f8fb814b56fa189",
+      "5c8a23412f8fb814b56fa18c",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 6,
+    "dispo": true,
+    "rooms": "3 rooms",
+    "space": "350 m2",
+    "images": ["home-3-1.jpeg", "home-3-2.jpeg", "home-3-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c295a",
+    "name": "The Snow Adventurer",
+    "price": 895000,
+    "summary": "Exciting adventure in the snow with snowboarding and skiing",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!\nDolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    "imageCover": "home-3-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "Las Vegas, USA",
+      "type": "Point",
+      "coordinates": [-115.172652, 36.110904],
+      "address": "3663 S Las Vegas Blvd, Las Vegas, NV 89109, USA"
+    },
+    "startDates": [
+      "2021-08-05T09:00:00.000Z",
+      "2022-03-20T10:00:00.000Z",
+      "2022-08-12T09:00:00.000Z"
+    ],
+    "maxGroupSize": 15,
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a23412f8fb814b56fa18c",
+      "5c8a201e2f8fb814b56fa186"
+    ],
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "dispo": true,
+    "rooms": "5 rooms",
+    "space": "600 m2",
+    "images": ["home-5-1.jpeg", "home-5-2.jpeg", "home-5-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c2961",
+    "name": "The Park Camper",
+    "price": 785000,
+    "summary": "Breathing in Nature in America's most spectacular National Parks",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!",
+    "imageCover": "home-5-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "NYC, USA",
+      "type": "Point",
+      "coordinates": [-73.985141, 40.75894],
+      "address": "Manhattan, NY 10036, USA"
+    },
+    "startDates": [
+      "2021-03-11T10:00:00.000Z",
+      "2021-05-02T09:00:00.000Z",
+      "2021-06-09T09:00:00.000Z"
+    ],
+    "maxGroupSize": 20,
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a201e2f8fb814b56fa186"],
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 5,
+    "dispo": true,
+    "rooms": "4 rooms",
+    "space": "267 m2",
+    "images": ["home-4-1.jpeg", "home-4-2.jpeg", "home-4-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c295d",
+    "name": "The City Wanderer",
+    "price": 600000,
+    "summary": "Living the life of Wanderlust in the US' most beatiful cities",
+    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat lorem ipsum dolor sit amet.\nConsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat!",
+    "imageCover": "home-4-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "California, USA",
+      "type": "Point",
+      "coordinates": [-118.803461, 34.006072],
+      "address": "29130 Cliffside Dr, Malibu, CA 90265, USA"
+    },
+    "startDates": [
+      "2021-07-19T09:00:00.000Z",
+      "2021-09-06T09:00:00.000Z",
+      "2022-03-18T10:00:00.000Z"
+    ],
+    "maxGroupSize": 8,
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a1f292f8fb814b56fa184",
+      "5c8a1f4e2f8fb814b56fa185"
+    ],
+    "ratingsAverage": 3.9,
+    "ratingsQuantity": 7,
+    "dispo": true,
+    "rooms": "10 rooms",
+    "space": "1000 m2",
+    "images": ["home-6-1.jpeg", "home-6-2.jpeg", "home-6-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c2966",
+    "name": "The Sports Lover",
+    "price": 1350000,
+    "summary": "Surfing, skating, parajumping, rock climbing and more, all in one tour",
+    "description": "Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\nVoluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur!",
+    "imageCover": "home-6-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "Utah, USA",
+      "type": "Point",
+      "coordinates": [-109.55099, 37.283469],
+      "address": "Bluff, UT 84512, USA"
+    },
+    "startDates": [
+      "2021-03-23T10:00:00.000Z",
+      "2021-10-25T09:00:00.000Z",
+      "2022-01-30T10:00:00.000Z"
+    ],
+    "maxGroupSize": 8,
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a1f292f8fb814b56fa184"],
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "dispo": true,
+    "rooms": "6 rooms",
+    "space": "295 m2",
+    "images": ["home-8-1.jpeg", "home-8-2.jpeg", "home-8-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c2970",
+    "name": "The Star Gazer",
+    "price": 1400000,
+    "summary": "The most remote and stunningly beautiful places for seeing the night sky",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "imageCover": "home-8-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "Yellowknife, CAN",
+      "type": "Point",
+      "coordinates": [-114.406097, 62.439943],
+      "address": "Yellowknife, NT X1A 2L2, Canada"
+    },
+    "startDates": [
+      "2021-12-16T10:00:00.000Z",
+      "2022-01-16T10:00:00.000Z",
+      "2022-12-12T10:00:00.000Z"
+    ],
+    "maxGroupSize": 12,
+    "guides": [
+      "5c8a21f22f8fb814b56fa18a",
+      "5c8a201e2f8fb814b56fa186",
+      "5c8a23412f8fb814b56fa18c"
+    ],
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "dispo": true,
+    "rooms": "3 rooms",
+    "space": "400 m2",
+    "images": ["home-9-1.jpeg", "home-9-2.jpeg", "home-9-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c2974",
+    "name": "The Northern Lights",
+    "price": 450000,
+    "summary": "Enjoy the Northern Lights in one of the best places in the world",
+    "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!\nDolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+    "imageCover": "home-9-cover.jpg"
+  },
+  {
+    "location": {
+      "description": "California, USA",
+      "type": "Point",
+      "coordinates": [-122.29286, 38.294065],
+      "address": "560 Jefferson St, Napa, CA 94559, USA"
+    },
+    "startDates": [
+      "2021-02-12T10:00:00.000Z",
+      "2021-04-14T09:00:00.000Z",
+      "2021-09-01T09:00:00.000Z"
+    ],
+    "maxGroupSize": 8,
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a23412f8fb814b56fa18c"],
+    "ratingsAverage": 4.4,
+    "ratingsQuantity": 7,
+    "dispo": true,
+    "rooms": "5 rooms",
+    "space": "525 m2",
+    "images": ["home-7-1.jpeg", "home-7-2.jpeg", "home-7-3.jpeg"],
+    "_id": "5c88fa8cf4afda39709c296c",
+    "name": "The Wine Taster",
+    "price": 525000,
+    "summary": "Exquisite wines, scenic views, exclusive barrel tastings,  and much more",
+    "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "imageCover": "home-7-cover.jpg"
+  }
+]

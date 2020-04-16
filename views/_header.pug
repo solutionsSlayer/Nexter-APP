@@ -1,0 +1,11 @@
+header.sidebar
+  a.sidebar__all(href=`/`) Home
+  .sidebar__login
+    if user
+        a#log-out(href="#") Log out
+        a(href="/me")
+          img.nav__user-img(src=`/img/users/${user.photo}` alt=`Photo of ${user.name}`)
+          a(href="/me")= user.name
+    else
+      a.btn__log(href='/login') Log in
+      a.btn__log(href='/signup') Sign up

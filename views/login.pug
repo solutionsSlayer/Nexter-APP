@@ -1,0 +1,20 @@
+extends base 
+
+block content
+    body.login_container
+        include _header
+
+        .login
+            form.login__form
+                h2.login__head.heading-3.heading-3--blue LOG IN TO YOUR ACCOUNT
+                .login__infos
+                    label(for="email") Your email
+                    input#email.login__input(placeholder="John-Doe@gmail.com" name="email" type="email")
+
+                div.login__infos
+                    label(for="password") Your password
+                    input#password.login__input(name="password" placeholder="********" type="password")
+
+                button#login__btn.btn Log In
+
+        include _footer

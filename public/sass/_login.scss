@@ -1,0 +1,42 @@
+.login {
+
+    grid-column: full-start / full-end;
+
+    display: grid;
+    align-content: center;
+    grid-template-rows: minmax(12rem, min-content) 1fr minmax(12rem, min-content);
+    justify-content: center;
+
+    &__form {
+        background-color: $color-grey-light-3;
+        padding: 5rem;
+
+        display: grid;
+        grid-row: 2 / 3;
+        grid-row-gap: 2.5rem;
+        align-items: center;
+    }
+
+    &__infos {
+        display: grid;
+
+        & label {
+            font-size: 1.4rem;
+            padding-bottom: .5rem;
+            font-weight: 600;
+            color: $color-primary-dark;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    &__input {
+        border-style: none;
+        border-radius: .5rem;
+        height: 2.5rem;
+        padding: 1rem;
+    }
+
+    &_btn {
+        justify-self: start;
+    }
+}

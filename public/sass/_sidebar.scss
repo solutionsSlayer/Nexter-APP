@@ -1,0 +1,75 @@
+.sidebar {
+    background-color: $color-primary;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+
+    &__all {
+        align-self: center;
+        justify-self: start;
+
+        color: rgba(#333, .75);
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    &__login {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        align-self: center;
+        align-items: center;
+        font-size: 1.75rem;
+        align-content: center;
+        justify-self: flex-end;
+        grid-column-gap: 1.5rem;
+        margin-right: 2rem;
+        padding: 1rem;
+    }
+
+    &__logo {
+        justify-items: flex-start;
+        color: #fff;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        justify-content: flex-end;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 0;
+
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
+
+    &::before,
+    &::after {
+        background-color: #fff;
+        height: 2px;
+        width: 4.5rem;
+        content: "";
+        display: block;
+    }
+
+    &::before {
+        transform: translateY(-1.5rem);
+    }
+
+    &::after {
+        transform: translateY(1.3rem);
+    }
+}
