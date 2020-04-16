@@ -11,7 +11,7 @@ const uri = process.env.DB_HOSTNAME.replace(
   "<password>",
   process.env.DB_PASSWORD
 );
-const port = process.env.DB_PORT;
+const port = process.env.DB_PORT || 3000;
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
