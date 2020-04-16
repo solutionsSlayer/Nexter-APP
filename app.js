@@ -10,7 +10,8 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
-const compression = require('compression');
+const compression = require("compression");
+const cors = require("cors");
 
 //START EXPRESS APP !!
 const app = express();
@@ -47,6 +48,7 @@ const bookingRoutes = require("./routes/bookingRoutes");
 const viewRoutes = require("./routes/viewRoutes");
 
 app.use(bodyParser.json());
+app.use(cors());
 app.use(
   bodyParser.urlencoded({
     extended: true
