@@ -11,7 +11,7 @@ const uri = process.env.DB_HOSTNAME.replace(
   "<password>",
   process.env.DB_PASSWORD
 );
-const port = process.env.DB_PORT;
+const port = process.env.DB_PORT || 3000;
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
@@ -20,7 +20,9 @@ mongoose.connect(uri, {
   useUnifiedTopology: true
 });
 
-const server = app.listen(port);
+const server = app.listen(port, () => {
+  console.log(`App running on port ${port}...`);
+});
 
 process.on('unhandledRejection', err => {
   console.log('UNHANDLED REJECTION! 💥 Shutting down...');
