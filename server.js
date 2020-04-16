@@ -13,7 +13,7 @@ dotenv.config({
 const app = require("./app");
 
 const DB = process.env.DB_HOSTNAME.replace(
-  "<PASSWORD>",
+  "<password>",
   process.env.DB_PASSWORD
 );
 
