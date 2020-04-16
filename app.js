@@ -10,6 +10,7 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
+const compression = require('compression');
 
 //START EXPRESS APP !!
 const app = express();
@@ -36,6 +37,8 @@ const limiter = rateLimit({
 if (process.env.NODE_ENV === "dev") {
   app.use(morgan("dev"));
 }
+
+app.use(compression());
 
 const homeRoutes = require("./routes/homeRoutes");
 const userRoutes = require("./routes/userRoutes");

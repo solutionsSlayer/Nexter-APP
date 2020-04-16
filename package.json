@@ -13,7 +13,7 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js entry.js --no-source-maps",
-    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
   },
   "author": "Jonas",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "axios": "^0.19.2",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

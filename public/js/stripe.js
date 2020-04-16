@@ -4,12 +4,12 @@ const stripe = Stripe('pk_test_zmn5CFzDD3IuM2pZZE1o5vnm00PiJ8usup');
 
 export const getBook = async (homeId) => {
     try {
-        const session = await axios(`http://127.0.0.1:3000/api/v1/bookings/checkout-session/${homeId}`);
+        const session = await axios(`/api/v1/bookings/checkout-session/${homeId}`);
 
         stripe.redirectToCheckout({
             sessionId: session.data.session.id
         })
-        console.log(session);
+        // console.log(session);
     } catch (err) {
         console.log(err);
         Swal.fire({

@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const app = require("./app");
 
-require('dotenv').config({
+/*eslint-disable-next-line*/
+require("dotenv").config({
   path: `${__dirname}/config.env`
 })
 
@@ -19,6 +20,4 @@ const DB = mongoose.connect(uri, {
   useUnifiedTopology: true
 });
 
-app.listen(port, () => {
-  console.log(`App running on port ${port}`);
-});
+app.listen(port);
