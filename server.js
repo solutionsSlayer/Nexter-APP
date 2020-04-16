@@ -17,7 +17,7 @@ mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
-  useUnifiedTopology: true
+  useUnifiedTopology: false
 });
 
 const server = app.listen(port, () => {
