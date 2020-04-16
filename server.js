@@ -7,7 +7,7 @@ require("dotenv").config({
   path: `${__dirname}/config.env`
 });
 
-const uri = 'mongodb+srv://Dorian:m5UwTj2mgpWtJxRr@cluster0-f3gw3.mongodb.net/nexter?retryWrites=true'
+const uri = 'mongodb+srv://Dorian:m5UwTj2mgpWtJxRr@cluster0-f3gw3.mongodb.net/test?retryWrites=true'
 const port = process.env.DB_PORT || 3000;
 
 mongoose.connect(uri, {
