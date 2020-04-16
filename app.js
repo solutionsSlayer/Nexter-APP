@@ -11,6 +11,7 @@ const bodyParser = require("body-parser");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 
+//START EXPRESS APP !!
 const app = express();
 
 app.set("view engine", "pug");
