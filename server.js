@@ -7,7 +7,7 @@ require("dotenv").config({
   path: `${__dirname}/config.env`
 });
 
-const uri = process.env.DB_HOSTNAME.replace(
+const uri = process.env.MONGODB_URI.replace(
   "<password>",
   process.env.DB_PASSWORD
 );
