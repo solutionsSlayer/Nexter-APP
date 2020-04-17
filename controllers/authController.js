@@ -24,10 +24,10 @@ const createSendToken = (user, statusCode, res) => {
     expires_in: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
-    httpOnly: true // Can't manipulate the cookie on browser
+    httpOnly: true, // Can't manipulate the cookie on browser
+    secure: req.secure || req.headers['x-forwarded-proto'] === 'https' // Only be sent on encrypted connexion (HTTPS)
   };
 
-  if (process.env.NODE_ENV === "prod") cookiesOptions.secure = true; // Only be sent on encrypted connexion (HTTPS)
 
   res.cookie("jwt", token, cookiesOptions);
 

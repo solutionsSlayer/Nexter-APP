@@ -16,6 +16,8 @@ const cors = require("cors");
 //START EXPRESS APP !!
 const app = express();
 
+app.enable('trust proxy');
+
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
@@ -54,6 +56,14 @@ app.use(
     extended: true
   })
 );
+
+app.use(cors()); // add some specific headers, 
+// Access-Control-Allow-Origin the "*" is for everyone
+// app.use(cors({
+//   origin: 'https://other domain'
+// }))
+
+app.options('*', cors()) // Do this on all the routes
 
 app.use(express.static(path.join(__dirname, "public")));
 
