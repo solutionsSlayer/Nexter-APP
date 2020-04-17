@@ -18,13 +18,42 @@
     flex: 32rem 0 0;
     background-color: $color-secondary;
     padding: 4rem 0;
+    transition: all .3s ease;
+
+    @media only screen and (max-width: 42.4rem) {
+        display: none;
+    }
 }
 
 .user-view__content {
+    position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     padding: 7rem 0;
+
+    & #arrow {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1.25rem;
+        left: 1.25rem;
+
+        @media only screen and (max-width: 42.4rem) {
+            display: block;
+            font-size: 3rem;
+        }
+    }
+
+    & h2 {
+        @media only screen and (max-width: 42.4rem) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: 22.5rem) {
+            font-size: 2rem;
+        }
+    }
 }
 
 .user-view__form-container {
@@ -83,4 +112,12 @@
     width: 1.9rem;
     fill: #f7f7f7;
     margin-right: 2rem;
+}
+
+.active {
+    display: block !important;
+}
+
+.disable {
+    display: none !important;
 }

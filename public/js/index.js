@@ -147,3 +147,35 @@ if (closeBtn) {
         deleteBook(homeId);
     })
 }
+
+//MENU
+
+const menu = {};
+menu.bool = false;
+menu.menuBtn = document.querySelector('#arrow');
+menu.element = document.querySelector('.user-view__menu');;
+
+window.onresize = function () {
+    if (this.innerWidth >= 800) {
+        menu.element.classList.remove('disable');
+        menu.element.classList.remove('active');
+    }
+}
+
+if (menu.menuBtn) {
+    menu.menuBtn.addEventListener('click', e => {
+
+        menu.bool = !menu.bool;
+        changeMenu(menu.bool);
+    })
+}
+
+const changeMenu = (bool) => {
+    if (bool === true) {
+        menu.element.classList.add('active');
+        menu.element.classList.remove('disable')
+    } else {
+        menu.element.classList.add('disable');
+        menu.element.classList.remove('active');
+    }
+}
