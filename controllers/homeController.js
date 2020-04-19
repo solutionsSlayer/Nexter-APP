@@ -68,6 +68,14 @@ exports.getAll = catchAsync(async (req, res, next) => {
 });
 
 exports.createHome = catchAsync(async (req, res, next) => {
+  if(req.body.imageCover) {
+    req.body.imageCover = `home-${req.body._id}-${Date.now()}.jpg`;
+    await sharp(req.body.imageCover)
+      .resize(2000, 1333)
+      .toFormat("jpg")
+      .toFile(`public/img/homes/${req.body.imageCover}`);
+  }
+
   const home = await Home.create(req.body);
 
   res.status(201).json({

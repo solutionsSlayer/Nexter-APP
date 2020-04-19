@@ -32,7 +32,7 @@ block content
           .home__price
             svg
               use(xlink:href=`img/sprite.svg#icon-key`)
-            p= `$${home.price}`
+            p= `$${home.price}`.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
           a.btn.home__btn(href=`/home/${home.slug}`) Contact realtor
 
     include _footer

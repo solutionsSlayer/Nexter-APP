@@ -41,6 +41,10 @@
         margin-bottom: 15%;
     }
 
+    &__guides {
+        grid-column: 2 / -1;
+    }
+
     &__facts,
     &__guides {
         display: grid;
@@ -49,6 +53,12 @@
         margin-left: 25%;
         grid-row-gap: 1.5rem;
         grid-template-columns: minmax(20rem, min-content);
+
+        @media only screen and (max-width: 37.5em) {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin: 0;
+        }
     }
 
     &__fact span,
@@ -56,6 +66,7 @@
         font-weight: bold;
         font-size: 1.5rem;
         margin-right: 1rem;
+        text-align: center;
     }
 
     &__fact p,
@@ -69,6 +80,12 @@
         grid-template-columns: repeat(2, min-content max-content);
         grid-column-gap: 1rem;
         align-items: end;
+    }
+
+    &__fact {
+        @media only screen and (max-width: 37.5em) {
+            justify-content: center;
+        }
     }
 
     &__icon {
@@ -91,14 +108,14 @@
         @media only screen and (max-width: $bp-medium) {
             grid-column: center-start / center-end;
             align-items: start;
-            grid-template-columns: repeat(2, minmax(min-content, 25rem));
+            grid-template-columns: minmax(min-content, 25rem) 1fr minmax(min-content, 25rem);
 
             margin: 5rem 0 2.5rem 0;
         }
 
-        @media only screen and (max-width: $bp-xsmall) {
-            grid-template-columns: min-content;
-            justify-content: center;
+        @media only screen and (max-width: 37.5em) {
+            justify-items: center;
+            align-items: center;
         }
     }
 
@@ -240,6 +257,12 @@
     padding-bottom: 11rem;
     padding-top: 11rem;
     background-color: #f7f7f7;
+
+    @media only screen and (max-width: 43.75em) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .cta {
@@ -252,6 +275,11 @@
     border-radius: 2rem;
     -webkit-box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 3rem 8rem 0.5rem rgba(0, 0, 0, 0.15);
+
+    @media only screen and (max-width: 43.75em) {
+        
+        padding: 10%;
+    }
 }
 
 .cta__img {
@@ -263,6 +291,10 @@
     border-radius: 50%;
     -webkit-box-shadow: 1rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
     box-shadow: 1rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
+
+    @media only screen and (max-width: 43.75em) {
+        display: none;
+    }
 }
 
 .cta__img--logo {
@@ -280,6 +312,10 @@
     z-index: 10;
     -webkit-transform: translate(-35%, -50%);
     transform: translate(-35%, -50%);
+
+    @media only screen and (max-width: 43.75em) {
+        display: none;
+    }
 }
 
 .cta__img--logo img {
@@ -314,4 +350,8 @@
 .cta__text {
     font-size: 1.9rem;
     font-weight: 400;
+
+    @media only screen and (max-width: 43.75em) {
+        display: none;
+    }
 }
