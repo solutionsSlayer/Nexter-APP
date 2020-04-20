@@ -16,7 +16,6 @@ const filterObj = (obj, ...allowFields) => {
 
 exports.getCheckoutSession = catchAsync(async (req, res, next) => {
     const home = await Home.findById(req.params.homeId);
-    const price = home.price * 100;
 
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
@@ -30,8 +29,8 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
             images: [
                 "https://r-cf.bstatic.com/images/hotel/max1024x768/174/174371067.jpg"
             ],
-            amount: price,
-            currency: "eur",
+            amount: home.price * 100,
+            currency: "usd",
             quantity: 1
         }]
     });
