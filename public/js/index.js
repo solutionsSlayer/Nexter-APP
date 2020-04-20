@@ -155,13 +155,11 @@ menu.bool = false;
 menu.menuBtn = document.querySelector('#arrow');
 menu.element = document.querySelector('.user-view__menu');;
 
-window.onresize = function () {
-    if (this.innerWidth >= 800) {
-        const disable = document.querySelector('.disable');
-        const active = document.querySelector('.active');
-        if(disable || active) {
-            menu.element.classList.remove(disable);
-            menu.element.classList.remove(active);
+if(menu.element) {
+    window.onresize = function () {
+        if (this.innerWidth >= 800) {
+            menu.element.classList.remove('disable');
+            menu.element.classList.remove('active');
         }
     }
 }
