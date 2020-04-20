@@ -29,9 +29,9 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
             images: [
                 "https://r-cf.bstatic.com/images/hotel/max1024x768/174/174371067.jpg"
             ],
-            amount: home.price,
+            amount: home.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
             currency: "eur",
-            quantity: 1 * 100
+            quantity: 1
         }]
     });
 
