@@ -31,7 +31,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
             ],
             amount: home.price,
             currency: "eur",
-            quantity: 1
+            quantity: 1 * 100
         }]
     });
 
