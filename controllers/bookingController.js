@@ -29,7 +29,7 @@ exports.getCheckoutSession = catchAsync(async (req, res, next) => {
             images: [
                 "https://r-cf.bstatic.com/images/hotel/max1024x768/174/174371067.jpg"
             ],
-            amount: home.price * 10000,
+            amount: home.price / 1000,
             currency: "eur",
             quantity: 1
         }]
