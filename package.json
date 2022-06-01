@@ -41,7 +41,7 @@
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4",
     "pug": "^2.0.4",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "slugify": "^1.4.0",
     "stripe": "^8.42.0",
     "sweetalert2": "^9.10.9",
